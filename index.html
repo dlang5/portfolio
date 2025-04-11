@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dennis Lang's Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      background-color: #0d1117;
+      color: white;
+      padding: 2rem 1rem;
+    }
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
+    }
+    header h1 {
+      margin: 1rem 0 0.5rem;
+    }
+    header p {
+      margin: 0.5rem auto;
+      max-width: 500px;
+    }
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .portfolio-item {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+    }
+    .portfolio-item:hover {
+      transform: translateY(-4px);
+    }
+    .portfolio-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .portfolio-item h3 {
+      margin: 1rem;
+      font-size: 1.1rem;
+    }
+    .portfolio-item p {
+      margin: 0 1rem 1rem;
+      font-size: 0.95rem;
+    }
+    .portfolio-item a.button {
+      display: block;
+      margin: 0 1rem 1rem;
+      padding: 0.5rem;
+      background: #0070f3;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="prof.png" alt="Your Profile Picture">
+  <h1>Dennis C Lang III</h1>
+  <p>Computer Engineering graduate passionate about embedded systems, hardware design, and intelligent software solutions.</p>
+</header>
+
+<section class="portfolio">
+  <div class="portfolio-item">
+    <img src="risc.png" alt="9-Bit RISC Processor">
+    <h3>9-Bit RISC Processor Design in EDA Playground</h3>
+    <p>Single-cycle processor with floating-point ALU, branching, memory, and assembler written in Python.</p>
+    <a href="risc.pdf" class="button" target="_blank">View</a>
+  </div>
+
+  <div class="portfolio-item">
+    <img src="goodreads.png" alt="Goodreads Project">
+    <h3>Goodreads Book Recommendation System</h3>
+    <p>Collaborative filtering with Jaccard similarity and popularity-based weighting, optimized via grid search.</p>
+    <a href="goodreads.pdf" class="button" target="_blank">View</a>
+  </div>
+
+  <div class="portfolio-item">
+    <img src="board.jpg" alt="Embedded Circuit Design">
+    <h3>Embedded Circuit Design and Analysis</h3>
+    <p>Designed and tested op-amp, BJT, and diode-based circuits in Multisim and PSpice, validated via breadboard.</p>
+    <a href="circuit_design.pdf" class="button" target="_blank">View</a>
+  </div>
+
+  <div class="portfolio-item">
+    <img src="weather.png" alt="Weather App">
+    <h3>Responsive Weather App with React.js</h3>
+    <p>Interactive React-based app with API integration and lazy loading for real-time weather forecasting.</p>
+    <a href="weather.pdf" class="button" target="_blank">View</a>
+  </div>
+
+  <div class="portfolio-item">
+    <img src="viterbi.png" alt="Viterbi Decoder">
+    <h3>Priority Encoder & Viterbi Decoder</h3>
+    <p>Built and verified finite-state machine with traceback and branch metric for clean data recovery in simulation.</p>
+    <a href="viterbi.pdf" class="button" target="_blank">View</a>
+  </div>
+
+  <div class="portfolio-item">
+    <img src="ctft.png" alt="Signal Processing in MATLAB">
+    <h3>Signal Processing and Fourier Analysis</h3>
+    <p>Implemented echo cancellation and Morse decoding using Butterworth filters and Fourier analysis in MATLAB.</p>
+    <a href="ctft.pdf" class="button" target="_blank">View</a>
+  </div>
+
+  <div class="portfolio-item">
+    <img src="safed.png" alt="Fire Safety PDF Preview">
+    <h3>SAFE-D Fire Safety System (Entrepreneurship)</h3>
+    <p>Group project focused on IoT safety systems. Authored the full project proposal, design, and risk analysis report.</p>
+    <a href="safed.pdf" class="button" target="_blank">View</a>
+  </div>
+
+  <div class="portfolio-item">
+    <img src="boids.png" alt="Boids Algorithm">
+    <h3>Boids Algorithm with Predation in OpenGL</h3>
+    <p>Simulated flocking behavior with predator-chase dynamics and real-time visualization using OpenGL.</p>
+    <a href="https://www.shadertoy.com/view/mltfDj" class="button" target="_blank">View</a>
+  </div>
+
+  <div class="portfolio-item">
+    <img src="uart.png" alt="UART Traffic Light">
+    <h3>UART Receiver (Moore Implementation) in EDA Playground</h3>
+    <p>Designed UART-enabled traffic light controller using finite-state logic and waveform testing in simulation.</p>
+    <a href="uart.pdf" class="button" target="_blank">View</a>
+  </div>
+
+
+  <div class="portfolio-item">
+    <img src="uart.png" alt="UART Traffic Light">
+    <h3>UART TX/RX Communications System in EDA Playground</h3>
+    <p>Designed UART-enabled traffic light controller using finite-state logic and waveform testing in simulation.</p>
+    <a href="uart.pdf" class="button" target="_blank">View</a>
+  </div>
+
+  <div class="portfolio-item">
+    <img src="project10.png" alt="OpenWRT Mesh Network">
+    <h3>OpenWRT Mesh Router Network</h3>
+    <p>Configured multi-node OpenWRT routers into a mesh topology using CLI and Luci with custom firmware builds.</p>
+    <a href="openwrt_network.pdf" class="button" target="_blank">In Progress</a>
+  </div>
+</section>
+
+</body>
+</html>
